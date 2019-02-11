@@ -1,0 +1,28 @@
+{
+  "name": "fullstack-vue-graphql-starter",
+  "version": "1.0.0",
+  "description": "Starter for Full-Stack Vue-GraphQL-Apollo Projects",
+  "author": "Reed Barger",
+  "scripts": {
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\"",
+    "server": "nodemon server.js"
+  },
+  "dependencies": {
+    "apollo-server": "^2.0.0-rc.7",
+    "bcrypt": "^3.0.0",
+    "dotenv": "^6.0.0",
+    "graphql": "^14.1.1",
+    "jsonwebtoken": "^8.3.0",
+    "md5": "^2.2.1",
+    "mongoose": "^5.2.6"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.18.1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "server.js"
+}
